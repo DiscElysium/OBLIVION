@@ -1,26 +1,26 @@
 @media screen{
- .cover-game{position:absolute;left:952px;top:184px;width:1454px;height:794px;display:flex;flex-direction:column;z-index:3;isolation:isolate;color:#dedede;font-family:Newsreader,Georgia,serif}
- .game-bar{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px;border-top:1px solid #858585;padding:9px 0;background:#000e}
- .game-label{font-size:17px;letter-spacing:.08em;display:flex;gap:18px;align-items:center}.game-label span:first-child{font-family:Arial,sans-serif;font-size:11px;color:#aaa;letter-spacing:.13em}
- .game-controls{display:flex;gap:25px;align-items:center}.game-controls button{border:0;border-bottom:1px solid #666;background:transparent;padding:8px 0;color:#ddd;font:21px/1.4 Newsreader,Georgia,serif}
+ .cover-game{position:relative;width:calc(100% - 8.88vw);max-width:1360px;margin:24px auto 46px;display:flex;flex-direction:column;scroll-margin-top:90px;color:#dedede;font-family:Newsreader,Georgia,serif}
+ .game-bar{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:58px;border-top:1px solid #696969;padding:10px 0}
+ .game-label{font-size:16px;letter-spacing:.06em;display:flex;gap:18px;align-items:center}.game-label span:first-child{font-family:Arial,sans-serif;font-size:10px;color:#aaa;letter-spacing:.13em}
+ .game-controls{display:flex;gap:24px;align-items:center;flex-shrink:0}.game-controls button{border:0;border-bottom:1px solid #666;background:transparent;padding:7px 0;color:#ddd;font:15px/1.4 Newsreader,Georgia,serif}
  .game-controls button:hover,.game-controls button:focus-visible{color:#fff;border-color:#fff}
- .game-viewport{position:relative;flex:1;min-height:0;background:#000;border:1px solid #5c5c5c;box-shadow:0 15px 55px #000b}
+ .game-viewport{position:relative;width:100%;aspect-ratio:16/9;max-height:68vh;min-height:240px;background:#000;border:1px solid #5c5c5c}
  .game-viewport iframe{position:absolute;inset:0;display:block;border:0;width:100%;height:100%;background:#000}
- .game-meta{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:16px 0 0;font-size:17px;line-height:1.45;background:#000e;color:#aaa;min-height:45px}
- .game-status{color:#ddd;font-size:17px;white-space:nowrap}.game-status::before{content:'';display:inline-block;width:4px;height:4px;background:#bcbcbc;margin-right:10px;vertical-align:middle}
+ .game-meta{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 0 0;font-size:12px;line-height:1.5;color:#aaa;min-height:32px}
+ .game-status{color:#ddd;font-size:12px;white-space:nowrap}.game-status::before{content:'';display:inline-block;width:4px;height:4px;background:#bcbcbc;margin-right:10px;vertical-align:middle}
  .game-mobile-note{display:none}.hero-actions button,.site-footer button[data-focus-game]{border:0;border-bottom:1px solid #969696;background:none;padding:0 0 5px;font:inherit;color:inherit;text-align:left}
  .hero-actions button:hover,.site-footer button[data-focus-game]:hover{color:#fff}
  .game-viewport iframe:fullscreen{position:fixed;inset:0;width:100vw;height:100vh;border:0;background:#000}
  html[data-language=zh] .game-label,html[data-language=zh] .game-controls button,html[data-language=zh] .game-meta{font-family:OblivionSerifSC,'Songti SC',SimSun,serif}
- html[data-language=zh] .game-label{font-size:16px;letter-spacing:.12em}html[data-language=zh] .game-controls button{font-size:20px}
- html[data-language=zh] .game-meta{font-size:16px;letter-spacing:.03em}
+ html[data-language=zh] .game-label{font-size:15px;letter-spacing:.08em}html[data-language=zh] .game-controls button{font-size:14px}
+ html[data-language=zh] .game-meta{font-size:12px;letter-spacing:.03em}
 }
 @media screen and (max-width:1000px){
- .hero .sheet{padding-top:420px}.cover-game{position:relative;left:auto;top:auto;width:100%;height:auto;order:1;margin:0 0 12px}
- .game-bar{min-height:48px;padding:10px 0;gap:12px}.game-label{font-size:13px;gap:10px}.game-label span:first-child{font-size:9px}.game-controls{gap:15px}.game-controls button{font-size:12px}
- .game-viewport{aspect-ratio:16/10;flex:none;width:100%}.game-meta{font-size:10px;align-items:start;gap:12px;padding-top:10px;flex-wrap:wrap;min-height:34px}.game-status{font-size:10px}
+ .cover-game{width:calc(100% - 48px);margin:20px auto 32px;scroll-margin-top:76px}
+ .game-bar{min-height:50px;gap:12px}.game-label{font-size:13px;gap:10px}.game-label span:first-child{font-size:9px}.game-controls{gap:15px}.game-controls button{font-size:12px}
+ .game-viewport{aspect-ratio:16/10;max-height:none;min-height:0}.game-meta{font-size:10px;align-items:start;gap:10px;padding-top:10px;flex-wrap:wrap;min-height:34px}.game-status{font-size:10px}
  .game-mobile-note{display:block;font-size:11px;line-height:1.7;color:#999;margin:5px 0 0}
- .hero-content{order:0}.hero-origin{order:2}.hero-meta{order:3}
  html[data-language=zh] .game-label{font-size:13px}html[data-language=zh] .game-controls button{font-size:12px}html[data-language=zh] .game-meta{font-size:10px}
 }
+@media screen and (max-width:440px){.game-bar{align-items:flex-start}.game-label{flex-direction:column;align-items:flex-start;gap:5px;padding-top:2px}.game-controls{gap:12px}.game-controls button{white-space:nowrap}}
 @media print{.cover-game{display:none!important}}

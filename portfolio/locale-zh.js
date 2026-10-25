@@ -282,4 +282,4 @@ window.OBLIVION_ZH={
 };
 
 
-window.OBLIVION_ZH["Play here ↓"]="在此游玩 ↓";
+window.OBLIVION_ZH["Play here ↑"]="在此游玩 ↑";

@@ -1,4 +1,4 @@
-@font-face{font-family:OblivionSerifSC;src:url('assets/fonts/OblivionSerifSC.woff2?v=20261025-play-04') format('woff2');font-style:normal;font-weight:400 600;font-display:swap}
+@font-face{font-family:OblivionSerifSC;src:url('assets/fonts/OblivionSerifSC.woff2?v=20261025-above-01') format('woff2');font-style:normal;font-weight:400 600;font-display:swap}
 .language-switch{display:flex;align-items:center;gap:11px;flex-shrink:0;font-family:Arial,sans-serif;font-size:12px;letter-spacing:.025em;white-space:nowrap}
 .language-switch a{padding:9px 0;color:#999;border-bottom:1px solid transparent}
 .language-switch a[aria-current]{color:#f7f7f7;border-bottom-color:#ccc}

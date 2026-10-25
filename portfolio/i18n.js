@@ -65,12 +65,12 @@
     const suffix = search.toString() ? '?' + search.toString() : '';
     const header = document.querySelector('.site-nav')?.offsetHeight || 70;
     let visibleChapter = null, visibleHeight = 0;
-    for (const section of document.querySelectorAll('.folio')) {
+    for (const section of document.querySelectorAll('.cover-game,.folio')) {
       const rect = section.getBoundingClientRect();
       const height = Math.max(0, Math.min(rect.bottom, innerHeight) - Math.max(rect.top, header));
       if (height > visibleHeight) { visibleHeight = height; visibleChapter = section.id; }
     }
-    const preceding = [...document.querySelectorAll('.folio')].reverse().find(section => section.getBoundingClientRect().top < header);
+    const preceding = [...document.querySelectorAll('.cover-game,.folio')].reverse().find(section => section.getBoundingClientRect().top < header);
     const chapterId = visibleChapter || preceding?.id;
     const chapter = chapterId ? '#' + chapterId : location.hash;
     document.querySelectorAll('.language-switch a').forEach(link => {
