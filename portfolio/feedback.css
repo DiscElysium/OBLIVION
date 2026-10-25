@@ -1,0 +1,129 @@
+/* A frontal field of parallel sheets; depth comes from displacement and overlap. */
+.oblivion-feedback{--of-ink:#d4d4d4;--of-soft:#aeaeae;--of-muted:#7e7e7e;position:relative;width:100%;height:100%;min-height:440px;isolation:isolate;overflow:hidden;color:var(--of-ink);font-family:Arial,"Microsoft YaHei",sans-serif;background:transparent}
+.oblivion-feedback *{box-sizing:border-box}
+.of-space{position:absolute;inset:0;overflow:hidden}
+.of-fit{position:absolute;width:1360px;height:760px;left:50%;top:50%;transform-origin:50% 50%;transform-style:preserve-3d;perspective:1800px;perspective-origin:50% 50%}
+.of-world{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(0deg) rotateY(0deg);will-change:transform}
+.of-plane{position:absolute;display:block;padding:30px 29px 32px 41px;background:#000;color:var(--of-ink);border:0;text-align:left;font:inherit;cursor:pointer;transform-style:preserve-3d;backface-visibility:hidden;transition:filter .25s;outline-offset:5px;box-shadow:none}
+.of-plane:hover,.of-plane:focus-visible{filter:brightness(1.18);outline:1px solid #d6d6d6}
+.of-frame{position:absolute;inset:0;width:100%;height:100%;color:#f7f7f7;overflow:visible;pointer-events:none}
+.of-frame path{vector-effect:non-scaling-stroke}
+.of-original-grain{filter:grayscale(1) brightness(1.6) contrast(1.12)}
+.of-card-top{display:flex;justify-content:space-between;gap:10px;align-items:center;padding-bottom:13px;color:#aeaeae;font-size:10px;line-height:1.4;letter-spacing:.08em}
+.of-card-top>span:first-child{white-space:nowrap}
+.of-card-topic{color:#d6d6d6;letter-spacing:.1em;font-size:9px;white-space:nowrap}
+.of-card-quote{display:block;margin:0 0 16px;color:#f7f7f7;font-family:"Noto Serif SC","Songti SC","SimSun",serif;font-size:22px;line-height:1.5;font-weight:400;letter-spacing:.025em;overflow-wrap:anywhere}
+.of-card-author{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;color:#aeaeae;font-size:10px;line-height:1.5;letter-spacing:.025em}
+.of-card-author>span:first-child{min-width:0;overflow-wrap:anywhere}
+.of-card-author>span:last-child{flex:none;white-space:nowrap}
+.of-card-rule{display:block;width:100%;height:1px;margin:17px 0;background:linear-gradient(90deg,#d6d6d67a,transparent)}
+.of-card-response{display:grid;grid-template-columns:minmax(0,1fr) 110px;gap:16px;align-items:start}
+.of-card-response-text{display:block;font-size:13px;line-height:1.65;color:#aeaeae;overflow-wrap:anywhere}
+.of-card-response-title{display:block;color:#f7f7f7;font-family:Newsreader,Georgia,"Times New Roman",serif;font-size:23px;line-height:1.15;margin-bottom:9px;font-weight:400}
+.of-card-image{display:block;width:110px;height:100px;object-fit:cover;filter:grayscale(1);opacity:.9;border:1px solid #d6d6d625}
+.of-card-foot{display:flex;justify-content:space-between;gap:9px;margin-top:16px;font-size:8px;line-height:1.5;letter-spacing:.12em;color:#999}
+.of-plane.is-featured .of-card-foot{position:absolute;left:41px;right:29px;bottom:31px;margin:0}
+.of-plane.is-featured .of-card-foot>span:first-child{max-width:70%}
+.of-plane.is-featured .of-card-foot>span:last-child{white-space:nowrap}
+.of-plane.is-background{padding:27px 26px 28px 37px}
+.is-background .of-card-top{padding-bottom:12px;font-size:9px;letter-spacing:.06em}
+.is-background .of-card-topic{font-size:8px}
+.is-background .of-card-quote{font-size:17px;line-height:1.55;margin-bottom:12px}
+.is-background .of-card-author{font-size:9px}
+.is-background .of-card-foot{margin-top:13px;font-size:7px;letter-spacing:.08em}
+.of-scene-label{position:absolute;z-index:4;top:17px;left:22px;display:flex;gap:18px;align-items:center;pointer-events:none;color:#898989;font-size:9px;letter-spacing:.17em;text-transform:uppercase}
+.of-scene-label b{font-weight:400;color:#aeaeae}
+.of-toolbar{position:absolute;right:20px;top:9px;z-index:5;display:flex;gap:12px;align-items:center}
+.of-toolbar button,.of-readlist button{font:10px Arial,"Microsoft YaHei",sans-serif;background:transparent;border:0;border-bottom:1px solid #d6d6d633;color:#aeaeae;padding:9px 0;cursor:pointer;letter-spacing:.06em}
+.of-toolbar button:hover,.of-toolbar button:focus-visible,.of-readlist button:hover,.of-readlist button:focus-visible{color:#f7f7f7;border-color:#d6d6d6;outline:none}
+.of-toolbar button[aria-pressed=true]{color:#d6d6d6}
+.of-scene-footer{position:absolute;z-index:4;bottom:16px;left:22px;right:22px;display:flex;justify-content:space-between;gap:20px;color:#898989;pointer-events:none;font-size:9px;line-height:1.6;letter-spacing:.08em}
+.of-readlist{position:absolute;z-index:5;left:22px;bottom:42px;display:flex;gap:18px}
+.of-readlist button{font-size:10px;letter-spacing:.1em}
+.of-depth-ruler{position:absolute;right:13px;top:43%;height:120px;border-left:1px solid #d6d6d645;color:#909090;font:8px Arial,sans-serif;letter-spacing:.15em;z-index:3;pointer-events:none}
+.of-depth-ruler span{position:absolute;left:7px;white-space:nowrap}
+.of-depth-ruler span:first-child{top:0}
+.of-depth-ruler span:last-child{bottom:0}
+.of-dialog{position:fixed;inset:0;margin:auto;width:min(1050px,92vw);max-height:90vh;overflow-y:auto;padding:42px;border:1px solid #aeaeae;background:#030303;color:#d4d4d4;box-shadow:0 20px 100px #000c;font-family:Arial,"Microsoft YaHei",sans-serif}
+.of-dialog::backdrop{background:#000000e8;backdrop-filter:blur(8px)}
+.of-dialog-close{position:absolute;right:17px;top:14px;border:0;background:none;color:#d4d4d4;font-size:26px;cursor:pointer;line-height:1;padding:5px}
+.of-dialog-meta{display:block;color:#aeaeae;letter-spacing:.12em;font-size:10px;line-height:1.8;margin:0 35px 25px 0}
+.of-dialog h3{font-family:Newsreader,"Noto Serif SC","SimSun",serif;font-size:29px;font-weight:400;line-height:1.45;margin:0 0 24px}
+.of-dialog blockquote{font-family:"Noto Serif SC","SimSun",serif;font-size:17px;line-height:1.95;white-space:pre-wrap;letter-spacing:.025em;margin:0;padding:0 0 25px;border-bottom:1px solid #d6d6d638}
+.of-dialog-reply{padding:20px 0 0 23px;border-left:1px solid #aeaeae66;margin-top:22px;font-size:14px;line-height:1.9;white-space:pre-wrap}
+.of-dialog-reply strong{display:block;font-size:10px;font-weight:400;letter-spacing:.08em;color:#aeaeae;margin-bottom:9px}
+.of-dialog-change{border-top:1px solid #d6d6d638;margin-top:28px;padding-top:22px;display:grid;grid-template-columns:1fr 220px;gap:28px}
+.of-dialog-change h4{margin:0 0 12px;color:#d6d6d6;letter-spacing:.12em;font-size:10px;font-weight:400}
+.of-dialog-change p{font-size:14px;line-height:1.9;margin:0}
+.of-dialog-change img{width:100%;height:145px;object-fit:cover;filter:grayscale(1)}
+.of-dialog-source{font-size:10px;line-height:1.8;color:#909090;margin:24px 0 0}
+.of-static .of-toolbar,.of-static .of-readlist,.of-static .of-depth-ruler{display:none}
+.of-static .of-plane{cursor:default}
+.of-static .of-scene-footer{bottom:9px}
+.of-static .of-scene-label{top:8px}
+.of-static .of-card-foot{color:#aeaeae}
+.of-static .of-plane.is-featured{opacity:1!important}
+.of-static .of-card-foot span:last-child{visibility:hidden}
+.of-static .of-world{will-change:auto}
+/* Language changes the reading rhythm, not the arrangement of the twelve planes. */
+.oblivion-feedback.of-zh .of-card-quote,.oblivion-feedback.of-zh .of-card-response-title,.of-dialog.of-zh h3,.of-dialog.of-zh blockquote,.of-dialog-original h3,.of-dialog-original blockquote{font-family:OblivionSerifSC,"Noto Serif SC","Songti SC","SimSun",serif}
+.oblivion-feedback.of-zh .of-card-response-title{font-size:21px;line-height:1.4}
+.oblivion-feedback.of-zh .of-card-top,.oblivion-feedback.of-zh .of-card-foot,.oblivion-feedback.of-zh .of-scene-label,.oblivion-feedback.of-zh .of-readlist button{letter-spacing:.08em}
+.oblivion-feedback.of-en .of-card-quote{font-family:Newsreader,Georgia,"Times New Roman",serif;font-size:22px;line-height:1.3;letter-spacing:0;overflow-wrap:normal}
+.oblivion-feedback.of-en .is-background .of-card-quote{font-size:19px;line-height:1.28;margin-bottom:12px}
+.oblivion-feedback.of-en .of-card-response-title{font-size:23px;line-height:1.08;letter-spacing:0}
+.oblivion-feedback.of-en .of-card-response-text{font-size:12.5px;line-height:1.55;overflow-wrap:normal}
+.oblivion-feedback.of-en .of-card-foot{letter-spacing:.1em}
+.of-dialog-language,.of-dialog-note h4,.of-dialog-original>h4{font-size:10px;font-weight:400;line-height:1.6;letter-spacing:.12em;color:#aeaeae;margin:0 0 16px}
+.of-dialog-note{margin-top:27px;padding-top:21px;border-top:1px solid #d6d6d638}
+.of-dialog-note h4{margin-bottom:7px}
+.of-dialog-note .of-dialog-source{margin:0}
+.of-dialog-original{margin-top:31px;padding-top:25px;border-top:1px solid #d6d6d638}
+.of-dialog.of-en>blockquote{font-family:Newsreader,Georgia,"Times New Roman",serif;font-size:20px;line-height:1.6;letter-spacing:0}
+.of-dialog-original h3{font-size:22px}
+.of-dialog-original blockquote{font-size:15px;line-height:1.95;letter-spacing:.025em}
+.of-dialog.of-en .of-dialog-reply{font-size:14px;line-height:1.8;letter-spacing:0}
+@media(prefers-reduced-motion:reduce){.of-world{will-change:auto}.of-plane{transition:none}}
+@media screen and (max-width:600px){
+ .oblivion-feedback{min-height:360px}
+ .of-scene-label{left:12px;font-size:8px;gap:7px}
+ .of-scene-label span{display:none}
+ .of-toolbar{right:12px}
+ .of-toolbar button{font-size:9px}
+ .of-scene-footer{left:12px;right:12px;font-size:8px}
+ .of-scene-footer span:last-child{display:none}
+ .of-readlist{left:12px;bottom:43px;gap:13px}
+ .of-readlist button{font-size:9px}
+ .of-dialog{padding:36px 24px}
+ .of-dialog h3{font-size:23px}
+ .of-dialog blockquote{font-size:15px}
+ .of-dialog-change{grid-template-columns:1fr}
+ .of-dialog-change img{height:180px}
+ /* Narrow screens keep complete frontal cards in a horizontal reading sequence. */
+ .oblivion-feedback:not(.of-static){height:540px;min-height:540px}
+ .oblivion-feedback:not(.of-static) .of-space{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-color:#aeaeae #050505;scrollbar-width:thin;padding-bottom:12px}
+ .oblivion-feedback:not(.of-static) .of-fit{left:0;top:52px;width:1008px;height:430px;transform:none!important;perspective:none}
+ .oblivion-feedback:not(.of-static) .of-world{transform:none!important;width:1008px}
+ .oblivion-feedback:not(.of-static) .of-plane.is-background{display:none}
+ .oblivion-feedback:not(.of-static) .of-plane.is-featured{top:0!important;width:305px!important;height:430px!important;padding:28px 23px 28px 33px;transform:none!important;scroll-snap-align:center}
+ .oblivion-feedback:not(.of-static) .of-plane[data-comment=C11]{left:18px!important}
+ .oblivion-feedback:not(.of-static) .of-plane[data-comment=C03]{left:347px!important}
+ .oblivion-feedback:not(.of-static) .of-plane[data-comment=C17]{left:676px!important}
+ .oblivion-feedback:not(.of-static) .of-card-quote{font-size:19px;line-height:1.55;margin-bottom:14px}
+ .oblivion-feedback:not(.of-static) .of-card-top{font-size:8px;letter-spacing:.04em}
+ .oblivion-feedback:not(.of-static) .of-card-topic{font-size:8px;letter-spacing:.05em}
+ .oblivion-feedback:not(.of-static) .of-card-response{grid-template-columns:minmax(0,1fr) 80px;gap:12px}
+ .oblivion-feedback:not(.of-static) .of-card-response-title{font-size:20px}
+ .oblivion-feedback:not(.of-static) .of-card-response-text{font-size:12px;line-height:1.7}
+ .oblivion-feedback:not(.of-static) .of-card-image{width:80px;height:100px}
+ .oblivion-feedback:not(.of-static) .of-card-author{font-size:8px}
+ .oblivion-feedback:not(.of-static) .of-plane.is-featured .of-card-foot{display:none}
+ .oblivion-feedback:not(.of-static) .of-depth-ruler{display:none}
+ .oblivion-feedback:not(.of-static) .of-scene-footer{bottom:6px}
+ .oblivion-feedback:not(.of-static) .of-readlist{bottom:31px}
+ .oblivion-feedback.of-en:not(.of-static) .of-card-quote{font-size:22px;line-height:1.27;letter-spacing:0}
+ .oblivion-feedback.of-en:not(.of-static) .of-card-response-title{font-size:20px;line-height:1.1}
+ .oblivion-feedback.of-en:not(.of-static) .of-card-response-text{font-size:12px;line-height:1.55}
+ .oblivion-feedback.of-zh:not(.of-static) .of-card-response-title{font-size:19px;line-height:1.4}
+ .of-dialog.of-en>blockquote{font-size:19px;line-height:1.55}
+}

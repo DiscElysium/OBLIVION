@@ -1,0 +1,1019 @@
+{
+  "version": "2026-10-25-research-1",
+  "purpose": "Source-checked content for page 04 of the independent draft website and static portfolio.",
+  "coordinateConvention": {
+    "world": "Blender XY, meters; vertical is Z. Source annotation anchors are region centers, not all exact gameplay-object positions.",
+    "rawMap": {
+      "size": [
+        6000,
+        7200
+      ],
+      "worldX": [
+        -180,
+        60
+      ],
+      "worldY": [
+        40,
+        328
+      ],
+      "equation": "px=(X+180)*25; py=(328-Y)*25"
+    },
+    "currentMap": {
+      "path": "portfolio/04-第4页-地图与知识递进/03-配图与图注/2026-10-24-连续山体与小圆显影/连续山体-小圆-微转8度-5040x2160.png",
+      "size": [
+        5040,
+        2160
+      ],
+      "process": "Rotate raw model projection clockwise 90 degrees, then invert the stored inverse_affine. The same transform applies to architectural line and footprint layers.",
+      "inverseAffine": [
+        2.350157483098938,
+        -0.33029309435679616,
+        -2073.778695273879,
+        0.33029309435679616,
+        2.350157483098938,
+        -2.695079438297853
+      ],
+      "pixelCenterTolerance": "<0.5 output pixel from PIL discrete rotation convention"
+    },
+    "unknownPolicy": "Unverified world and map coordinates are explicit null. relatedModelRegion is context only unless presentation is verified_region."
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "path": "portfolio/00-总体/02-整册文稿/OBLIVION-六页作品集文稿与页面说明-v3-2026-10-23.md",
+      "scope": "Latest requested narrative; page 04 complete journey and map labels."
+    },
+    {
+      "id": "S02",
+      "path": "output/blender/oblivion-model-map-20261023-extended/audit/final_map_report.json",
+      "scope": "Thirteen model label anchors and exact projection dimensions."
+    },
+    {
+      "id": "S03",
+      "path": "output/blender/oblivion-world-20261007/scripts/design_map.py",
+      "scope": "Protected starting/mirror hall regions; original route; optional N01/N02 are model proposals; original bridge and ceiling mirror caveats."
+    },
+    {
+      "id": "S04",
+      "path": "OBLIVION-游戏完整设计总文档.md",
+      "scope": "Author-confirmed journey, three stair encounters, hidden two branches, ceiling mirror, preserve/erase, facing mirrors and finale."
+    },
+    {
+      "id": "S05",
+      "path": "portfolio/04-第4页-地图与知识递进/03-配图与图注/2026-10-24-连续山体与小圆显影/构图参数.json",
+      "scope": "Current 5040×2160 exact architectural map fit and affine transform."
+    },
+    {
+      "id": "S06",
+      "path": "output/blender/oblivion-world-20261007/audit/piano_landmark_mapping.json",
+      "scope": "Eleven reconstructed piano placements and original metadata hint text; not full proof of actual hint sequence."
+    }
+  ],
+  "criticalAccuracyRules": [
+    "The corridor fall and ceiling mirror recognition are separate events. The player can stand on the ceiling mirror.",
+    "The hidden route has two branches. Ceiling mirror explains how to arrive earlier; viewpoint explains why.",
+    "The second stair encounter is after the first eclipse; the third uses an existing dispersed stair before the first eclipse.",
+    "Erased objects are absent and cannot be recalled by ordinary gaze in that round. Do not depict erasure as rubble.",
+    "Bridge preservation precedes the single facing-mirror extension. Facing mirrors do not restore an erased bridge.",
+    "The viewpoint-to-gate exact walking connection is not confirmed; a sightline is not a walkable route.",
+    "Optional Moon Pavilion / Mirror Garden / N01 / N02 are later model proposals, not confirmed required main-story nodes.",
+    "The map is a spatial model composite with repainted terrain. Exact architecture does not prove every proposed gameplay connection.",
+    "Final local reappearance is a separate finale; the full world is not restored."
+  ],
+  "modelLandmarks": [
+    {
+      "id": "M01",
+      "labelEN": "Starting Room",
+      "labelZH": "起点厅",
+      "worldXY": [
+        4.271744,
+        296.105
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        4606.794,
+        797.375
+      ],
+      "currentMapPixels": [
+        3807.19,
+        1426.287
+      ],
+      "currentMapPercent": [
+        75.5395,
+        66.0318
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "The journey begins here. Later, a changed viewpoint reveals a way to gather yourself before leaving.",
+      "functionAnnotationZH": "旅程起点；之后从不同高度重新认识起点，发现出发前即可聚集自身。",
+      "status": "confirmed_room_region",
+      "caution": "Do not place a precise ceiling-mirror dot at the room center. This anchor identifies the room, not the mirror plane.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M02",
+      "labelEN": "Opening Staircase",
+      "labelZH": "双层螺旋楼梯",
+      "worldXY": [
+        -24.4,
+        291.6
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        3890.0,
+        910.0
+      ],
+      "currentMapPixels": [
+        3718.162,
+        1133.801
+      ],
+      "currentMapPercent": [
+        73.773,
+        52.4908
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "One structure, three uses: gather it to climb; return after its erasure to find the passage; then gather yourself and pass through before the eclipse.",
+      "functionAnnotationZH": "同一楼梯的三种用途：初次凝聚上行；之后在被抹去的空缺下发现通道；学会后自我聚集、在月食前穿入。",
+      "status": "confirmed_structure_region",
+      "caution": "This is the staircase region, not a surveyed hidden-passage entrance.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M03",
+      "labelEN": "North Library Court",
+      "labelZH": "北藏书庭",
+      "worldXY": [
+        -36.8056,
+        279.6245
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        3579.86,
+        1209.387
+      ],
+      "currentMapPixels": [
+        3575.051,
+        1021.949
+      ],
+      "currentMapPercent": [
+        70.9336,
+        47.3124
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "A recognizable architectural landmark on the original route. Its silhouette helps the player orient and recognize a return.",
+      "functionAnnotationZH": "原路线上的建筑地标；以可辨认轮廓支持方向感和重访识别。",
+      "status": "verified_model_landmark",
+      "caution": "A local piano placement exists in source metadata; do not turn this building into a new required puzzle.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M04",
+      "labelEN": "Mirror Hall / Fall Area",
+      "labelZH": "镜厅",
+      "worldXY": [
+        -11.3654,
+        270.1919
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        4215.865,
+        1445.203
+      ],
+      "currentMapPixels": [
+        3513.952,
+        1301.158
+      ],
+      "currentMapPercent": [
+        69.7213,
+        60.2388
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "The corridor directs attention toward the reflected self. A gathered body can fall through the dispersed floor, making the rule of passage tangible.",
+      "functionAnnotationZH": "镜厅与落下区域：长廊使视线朝向倒影；聚集的身体穿过消散地面，让穿透规则成为亲身经历。",
+      "status": "confirmed_region_not_mirror_point",
+      "caution": "Source design_map.py explicitly marks H201–H203 as mirror hall / protected fall area. Mirror plane and exact fall-floor coordinates remain unverified.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M05",
+      "labelEN": "Broken Slab Route",
+      "labelZH": "断裂石板区",
+      "worldXY": [
+        -20.6,
+        255.4
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        3985.0,
+        1815.0
+      ],
+      "currentMapPixels": [
+        3346.111,
+        1226.513
+      ],
+      "currentMapPercent": [
+        66.3911,
+        56.783
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "Separated landings make the route and its gaps legible. These platforms support movement and spatial familiarity.",
+      "functionAnnotationZH": "断裂石板路线；可辨落脚面和间隙支持移动判断及空间熟悉感。",
+      "status": "verified_model_landmark",
+      "caution": "Do not claim a specific jump difficulty, teaching order or active eclipse state from this geometry.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M06",
+      "labelEN": "West Library Court",
+      "labelZH": "西藏书庭",
+      "worldXY": [
+        -59.7739,
+        244.5913
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        3005.653,
+        2085.218
+      ],
+      "currentMapPixels": [
+        3175.928,
+        833.715
+      ],
+      "currentMapPercent": [
+        63.0144,
+        38.5979
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "A distinctive court along the original connected route; repeated architectural identity helps spaces become familiar.",
+      "functionAnnotationZH": "原连接路线中的特色庭院；重复辨认建筑身份，使空间逐渐熟悉。",
+      "status": "verified_model_landmark",
+      "caution": "No independently verified required puzzle is assigned to this exact court.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M07",
+      "labelEN": "Main Bridge / Original Bridge Model",
+      "labelZH": "主桥",
+      "worldXY": [
+        -36.759,
+        222
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        3581.025,
+        2650
+      ],
+      "currentMapPixels": [
+        2974.007,
+        1106.916
+      ],
+      "currentMapPercent": [
+        59.0081,
+        51.2461
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "A long crossing gives the journey a strong directional landmark. The game later asks the player to preserve the final bridge, then extend the crossing with facing mirrors.",
+      "functionAnnotationZH": "长桥形成方向性地标；玩法中先保住终点桥，再在桥上以双镜延伸通路。",
+      "status": "verified_bridge_model",
+      "caution": "The original bridge model is located here. Exact gate, viewpoint and two mirror positions have not been tied to model coordinates. Avoid suggesting the visible bridge model measures the full extended playable route.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M08",
+      "labelEN": "Spiral Tower",
+      "labelZH": "螺旋塔",
+      "worldXY": [
+        -36.7408,
+        194.4518
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        3581.48,
+        3338.705
+      ],
+      "currentMapPixels": [
+        2686.664,
+        1147.493
+      ],
+      "currentMapPercent": [
+        53.3068,
+        53.1247
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "A tall landmark gives the distant end of the route a recognizable silhouette and a change of scale.",
+      "functionAnnotationZH": "高塔作为远端轮廓地标，提供辨认和尺度变化。",
+      "status": "verified_model_landmark",
+      "caution": "Do not identify this tower as the final summit or final ascent without a scene cross-check.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M09",
+      "labelEN": "Cathedral",
+      "labelZH": "大教堂",
+      "worldXY": [
+        -80.475,
+        224.062
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        2488.125,
+        2598.45
+      ],
+      "currentMapPixels": [
+        2931.427,
+        647.867
+      ],
+      "currentMapPercent": [
+        58.1632,
+        29.9939
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "A major architectural landmark gives orientation and marks a change in scale during exploration.",
+      "functionAnnotationZH": "大教堂作为主要地标，帮助辨认方向，并在探索中形成尺度与节奏变化。",
+      "status": "verified_model_landmark",
+      "caution": "Do not add a new cathedral-specific mechanism or claim it is the finale.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M10",
+      "labelEN": "Moon Pavilion — Optional Model Study",
+      "labelZH": "观月亭",
+      "worldXY": [
+        -84,
+        255
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        2400,
+        1825
+      ],
+      "currentMapPixels": [
+        3248.99,
+        565.739
+      ],
+      "currentMapPercent": [
+        64.4641,
+        26.1916
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "An optional spatial study: a single mirror can materialize one landing toward a quiet lookout. It does not replace the main route.",
+      "functionAnnotationZH": "可选空间建模研究：单镜实体化一段落脚台，通向静观支路；不替代主线。",
+      "status": "model_proposal_only",
+      "caution": "This pavilion is not verified as the main bridge-preservation viewpoint. N01 is explicitly a model-layout proposal, not confirmed shipped gameplay.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M11",
+      "labelEN": "Mirror Garden — Optional Model Study",
+      "labelZH": "镜庭花园",
+      "worldXY": [
+        -81,
+        280
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        2475,
+        1200
+      ],
+      "currentMapPixels": [
+        3514.177,
+        560.382
+      ],
+      "currentMapPercent": [
+        69.7257,
+        25.9436
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "An optional side-loop study uses a dispersed screen for backward traversal. Its loop preserves the main route and gate conditions.",
+      "functionAnnotationZH": "可选支路建模研究：自我聚集后倒退穿过消散屏；支路不绕过主线门与保桥条件。",
+      "status": "model_proposal_only",
+      "caution": "N02 is a later optional screen proposal. Do not label it as the original backward-door teaching scene.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M12",
+      "labelEN": "Lower Slab Passage",
+      "labelZH": "下层石板通路",
+      "worldXY": [
+        -14.5,
+        244
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        4137.5,
+        2100
+      ],
+      "currentMapPixels": [
+        3236.134,
+        1306.858
+      ],
+      "currentMapPercent": [
+        64.209,
+        60.5027
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "A lower sequence of platforms makes vertical separation visible in the model map.",
+      "functionAnnotationZH": "下层平台序列，让模型地图中的上下层关系可见。",
+      "status": "verified_model_landmark",
+      "caution": "Do not equate this lower passage with the hidden passage beneath the opening staircase without a scene cross-check.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "M13",
+      "labelEN": "Mountain Island",
+      "labelZH": "完整山体",
+      "worldXY": [
+        -145,
+        104
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        875,
+        5600
+      ],
+      "currentMapPixels": [
+        1584.397,
+        150.79
+      ],
+      "currentMapPercent": [
+        31.4365,
+        6.981
+      ],
+      "anchorScope": "model region center / source label target",
+      "functionAnnotationEN": "The terrain gives the floating architecture a shared setting and scale. Read the player route through its platforms, openings and landmarks.",
+      "functionAnnotationZH": "山体给予悬浮建筑共同环境与尺度；通过平台、开口和地标阅读玩家路线。",
+      "status": "verified_terrain",
+      "caution": "The 2026-10-24 continuous terrain field was artistically repainted around exact architectural lines; terrain illustration is not surveyed gameplay topology.",
+      "source": "S02",
+      "semanticEvidence": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    }
+  ],
+  "journeyCallouts": [
+    {
+      "id": "J01",
+      "titleEN": "Begin by giving form",
+      "titleZH": "起点：使世界成形",
+      "annotationEN": "Sustained gaze gathers particles into a usable form. The first route begins when the opening staircase becomes walkable.",
+      "annotationZH": "持续凝视让粒子组成可用形体；初始楼梯成形后，第一条路线才可以上行。",
+      "narrativeRelation": "Introduces gaze as an action, then establishes a place worth recognizing later.",
+      "presentation": "verified_region",
+      "relatedModelRegion": "M01",
+      "worldXY": [
+        4.271744,
+        296.105
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        4606.794,
+        797.375
+      ],
+      "currentMapPixels": [
+        3807.19,
+        1426.287
+      ],
+      "currentMapPercent": [
+        75.5395,
+        66.0318
+      ],
+      "source": "S01",
+      "caution": null
+    },
+    {
+      "id": "J02",
+      "titleEN": "The same stair, three readings",
+      "titleZH": "三次楼梯：认识改变用途",
+      "annotationEN": "First, gather and ascend. Later, its erasure opens the passage below. On a new attempt, gather yourself and cross the still-dispersed stair before the first eclipse.",
+      "annotationZH": "第一次凝聚并上行；之后楼梯被抹去，显露下方通道；新一轮自我聚集，在首次月食前穿过仍消散的楼梯。",
+      "narrativeRelation": "A compact three-state inset should stay connected to this same stair region.",
+      "presentation": "verified_region",
+      "relatedModelRegion": "M02",
+      "worldXY": [
+        -24.4,
+        291.6
+      ],
+      "worldZ": null,
+      "rawMapPixels": [
+        3890.0,
+        910.0
+      ],
+      "currentMapPixels": [
+        3718.162,
+        1133.801
+      ],
+      "currentMapPercent": [
+        73.773,
+        52.4908
+      ],
+      "source": "S01",
+      "caution": "Three encounters describe changes in understanding, not exactly three mandatory rounds."
+    },
+    {
+      "id": "J03",
+      "titleEN": "A mirror draws the gaze inward",
+      "titleZH": "长廊：镜子把注意引向自身",
+      "annotationEN": "The mirror at the end of the corridor draws the gaze toward the reflected self. Looking at that reflection gathers the player.",
+      "annotationZH": "长廊尽头的镜子自然吸引视线朝向自身倒影；注视倒影使玩家聚集。",
+      "narrativeRelation": "Moves the existing gaze rule from the environment to the observer.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": "M04",
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "Mirror Hall is a verified region, but the exact mirror plane is not located. A leader may connect to a labeled hall region; do not use a precise mirror dot."
+    },
+    {
+      "id": "J04",
+      "titleEN": "A body passes through the floor",
+      "titleZH": "地面：让穿透成为经历",
+      "annotationEN": "Once gathered, the player passes through the dispersed floor and falls. The rule is experienced before it is deliberately applied.",
+      "annotationZH": "自身聚集后，玩家穿过消散地面并落下；先亲历因果，随后才主动运用。",
+      "narrativeRelation": "A paired section diagram can show player state and floor state at the same moment.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": "M04",
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "This fall occurs in the corridor teaching scene, never at the ceiling mirror."
+    },
+    {
+      "id": "J05",
+      "titleEN": "Look away to pass",
+      "titleZH": "倒退门：选择不看什么",
+      "annotationEN": "Walk backward while remaining gathered. Looking at the door would gather it and block the passage.",
+      "annotationZH": "保持自身聚集并倒退过门；看门会使门聚集，反而阻挡通行。",
+      "narrativeRelation": "Turns accidental discovery into deliberate control of attention.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": null,
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "The original door position is unverified. Do not substitute the optional N02 garden screen."
+    },
+    {
+      "id": "J06",
+      "titleEN": "An old route becomes recognizable",
+      "titleZH": "回接：原来以为是墙的地方",
+      "annotationEN": "A passage through what once seemed to be a wall reconnects with the earlier route. A distinctive mirror frame makes the return recognizable.",
+      "annotationZH": "穿过曾以为是墙的位置后，路线接回旧路；特色镜框帮助玩家认出自己曾经来过。",
+      "narrativeRelation": "Knowledge changes how a familiar location can be used.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": null,
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "The exact reconnection point and earlier mirror A position are unverified."
+    },
+    {
+      "id": "J07",
+      "titleEN": "Learn what an eclipse keeps",
+      "titleZH": "月食：学习留存条件",
+      "annotationEN": "An eclipse erases dispersed objects and players. Gathering yourself allows you to survive that event.",
+      "annotationZH": "月食抹去消散物体和消散玩家；自我聚集能够使玩家度过当次月食。",
+      "narrativeRelation": "Transfers mirror knowledge from passage into survival.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": null,
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "Show as a timeline/state comparison, not a new geographically located room."
+    },
+    {
+      "id": "J08",
+      "titleEN": "Absence reveals an entrance",
+      "titleZH": "隐藏通道：楼梯的缺席",
+      "annotationEN": "After the round’s first eclipse, the unpreserved staircase is gone. The opening exposes a passage below the familiar route.",
+      "annotationZH": "本轮首次月食后，未被保留的楼梯已经被抹去；熟悉路线的下方因此露出入口。",
+      "narrativeRelation": "Second key encounter with the stair. Loss changes the route.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": "M02",
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "Exact entrance and path geometry are unverified. Erased means absent, without rubble or ghost steps."
+    },
+    {
+      "id": "J09",
+      "titleEN": "Two branches, one inference",
+      "titleZH": "双分支：一个方法与一个理由",
+      "annotationEN": "One branch reaches the upper starting area; the other reaches the viewpoint. One explains how to leave earlier, the other why earlier arrival matters.",
+      "annotationZH": "一支通向起点上方，一支通向观景台；一支说明如何提前出发，另一支说明为何必须提前抵达。",
+      "narrativeRelation": "This causal pair must remain visible together.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": null,
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "Use a schematic fork in an inset. It is a relationship diagram, not an invented surveyed map route."
+    },
+    {
+      "id": "J10",
+      "titleEN": "Recognize the ceiling mirror",
+      "titleZH": "顶镜：重新认识起点",
+      "annotationEN": "From above, the reflected chandelier and the player’s own reflection reveal the ceiling mirror. The start already contains a way to gather yourself.",
+      "annotationZH": "从上方看到反射的吊灯顶面和自身，识别起点顶镜；开局就已具备自我聚集条件。",
+      "narrativeRelation": "Reinterprets the first room and provides the method for an early shortcut.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": "M01",
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "Player can stand on this mirror. No fall occurs here. The horizontal mirror plane’s exact height and footprint are unverified."
+    },
+    {
+      "id": "J11",
+      "titleEN": "The viewpoint reveals a missed chance",
+      "titleZH": "观景台：我来晚了",
+      "annotationEN": "The viewpoint gives a sightline to the final bridge, but after the first eclipse the bridge has already been lost. Next time, arrive before that event.",
+      "annotationZH": "观景台可以凝视终点大桥，但首次月食后桥已经失去；下一次必须赶在结算前到达。",
+      "narrativeRelation": "Provides the reason to apply the early route.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": null,
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "The main preservation viewpoint is not verified at the Moon Pavilion or at the optional N01 lookout."
+    },
+    {
+      "id": "J12",
+      "titleEN": "Return with a plan",
+      "titleZH": "新一轮：把理解变成路线",
+      "annotationEN": "At the start, gather yourself in the ceiling mirror. Cross the still-dispersed staircase and enter the hidden passage before the first eclipse.",
+      "annotationZH": "新一轮开局注视顶镜使自身聚集；穿过仍消散的楼梯，在首次月食前进入隐藏通道。",
+      "narrativeRelation": "Third key stair encounter changes timing without adding a new physical route.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": "M02",
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": null
+    },
+    {
+      "id": "J13",
+      "titleEN": "Keep the bridge",
+      "titleZH": "桥：留下需要的道路",
+      "annotationEN": "From the viewpoint, keep the bridge gathered through the first eclipse so the crossing remains.",
+      "annotationZH": "在观景台使大桥以聚集态经历首次月食，让需要的道路留下。",
+      "narrativeRelation": "Attention operates across a sightline before the walking route is open.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": "M07",
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "The bridge model is located, but the controlling viewpoint and exact gaze target are unverified."
+    },
+    {
+      "id": "J14",
+      "titleEN": "Let the gate disappear",
+      "titleZH": "门：放下阻挡的形体",
+      "annotationEN": "Leave the entrance gate dispersed. The same eclipse erases it, removing the obstacle before the retained bridge.",
+      "annotationZH": "让入口门保持消散；同一次月食将其抹去，解除通向已保留大桥的阻挡。",
+      "narrativeRelation": "Keep the bridge, erase the gate and survive yourself: all three conditions are required.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": "M07",
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "Gate position and viewpoint-to-gate walking route are unverified. Do not draw a specific direct walk connection."
+    },
+    {
+      "id": "J15",
+      "titleEN": "Remain gathered",
+      "titleZH": "自身：与道路一起留存",
+      "annotationEN": "The player must also remain gathered through that eclipse. A kept bridge cannot help a player who has been erased.",
+      "annotationZH": "玩家自身也必须保持聚集度过月食；桥留下而玩家消失，仍不能继续。",
+      "narrativeRelation": "Complete the three-part eclipse result: Bridge retained / Gate erased / Player survives.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": null,
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": null
+    },
+    {
+      "id": "J16",
+      "titleEN": "Reflection becomes a route",
+      "titleZH": "镜像实体化：倒影进入现实",
+      "annotationEN": "Earlier mirror encounters teach that a reflected object can form a corresponding entity in the world.",
+      "annotationZH": "此前的多次镜面接触逐步教会玩家：镜中物体能够形成现实中的对应实体。",
+      "narrativeRelation": "Prepares the single facing-mirror sequence; not every earlier mirror use has a documented location.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": null,
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "Do not imply all mirror-materialization lessons occur after the preservation puzzle."
+    },
+    {
+      "id": "J17",
+      "titleEN": "Extend the crossing",
+      "titleZH": "双镜：延伸前路",
+      "annotationEN": "On the bridge, one facing-mirror sequence extends it into a very long walkable path. It combines knowledge learned earlier.",
+      "annotationZH": "桥上唯一一次相对双镜组合，把桥延伸为极长的可行走道路；组合运用此前获得的知识。",
+      "narrativeRelation": "A modest but clear high point after entering the preserved bridge.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": "M07",
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "This does not restore an already erased bridge. Exact two-mirror positions, placement mechanism and maximum extent are unverified."
+    },
+    {
+      "id": "J18",
+      "titleEN": "Move when gaze no longer works",
+      "titleZH": "终局：凭熟悉感前行",
+      "annotationEN": "After the world’s final disappearance, gaze no longer gathers the path. Familiarity supports movement as the surroundings return locally.",
+      "annotationZH": "世界最终消逝后，凝视不再聚集道路；玩家凭熟悉感迈步，周围局部重现。",
+      "narrativeRelation": "Earlier encounters support a new kind of movement; the full world is not restored.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": null,
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "This is a separate finale process, not an effect produced by the facing mirrors. Exact final route coordinates are unverified."
+    },
+    {
+      "id": "J19",
+      "titleEN": "One last view of the moon",
+      "titleZH": "终点：再看一次月光",
+      "annotationEN": "Reach the summit, touch the moon and look at it one last time. The world does not return in full.",
+      "annotationZH": "登上山顶、触碰月亮，再看一次月光；整个世界没有因此恢复。",
+      "narrativeRelation": "Closes the journey with a finite encounter rather than total preservation.",
+      "presentation": "concept_inset",
+      "relatedModelRegion": null,
+      "worldXY": null,
+      "worldZ": null,
+      "rawMapPixels": null,
+      "currentMapPixels": null,
+      "currentMapPercent": null,
+      "source": "S01",
+      "caution": "Do not identify the Spiral Tower or Moon Pavilion as this summit without scene evidence."
+    }
+  ],
+  "layoutRecommendation": {
+    "canvas": [
+      5040,
+      2160
+    ],
+    "visualDirectionEN": "An annotated field atlas: a continuous architectural map is the main image; short functional notes gather around it in three uneven constellations. Delicate lines carry causal links. The feeling of space comes from hierarchy and breath between connected details, not a large vacant black panel.",
+    "visualDirectionZH": "把地图做成有叙事的场域图谱：连续地图为主视觉，短功能注释按三组不等大的星丛围绕建筑。细线承载因果关系；留白来自层级、笔触和细节间的呼吸，而非大片闲置黑场。",
+    "composition": [
+      {
+        "areaPercent": [
+          3,
+          4,
+          26,
+          16
+        ],
+        "content": "Small section number, two-line serif title and a 28–40 word orientation. Keep this compact."
+      },
+      {
+        "areaPercent": [
+          27,
+          4,
+          70,
+          70
+        ],
+        "content": "Exact-model architecture map. Keep the current continuous hill field, but use local faded windows beneath the annotations. Do not redraw architecture through image generation."
+      },
+      {
+        "areaPercent": [
+          3,
+          23,
+          27,
+          45
+        ],
+        "content": "Three-state staircase section, then a narrow mirror/floor pair. Each miniature gets one direct functional leader."
+      },
+      {
+        "areaPercent": [
+          30,
+          10,
+          31,
+          21
+        ],
+        "content": "Callout constellation A: Starting room, stair, early route and mirror hall. Short upper-edge labels follow the actual region coordinates."
+      },
+      {
+        "areaPercent": [
+          66,
+          10,
+          31,
+          26
+        ],
+        "content": "Callout constellation B: lower-passage fork and ceiling mirror / viewpoint causal pair. Use a drawn schematic box with no exact map endpoints."
+      },
+      {
+        "areaPercent": [
+          60,
+          43,
+          37,
+          24
+        ],
+        "content": "Callout constellation C: bridge-preservation states and facing-mirror concept. Anchor the bridge region only; unresolved objects live in small section diagrams."
+      },
+      {
+        "areaPercent": [
+          3,
+          75,
+          94,
+          20
+        ],
+        "content": "A dense, low horizontal story band: corridor self-gaze → backward door → recognition of old route → final local reappearance. Vary image widths and caption lengths rather than four identical cards."
+      }
+    ],
+    "leaders": {
+      "lineWeightAt5040px": "1.5–2px main leaders; 0.8–1.2px secondary; 6–9px open region marker",
+      "lineRouting": "At most one elbow, avoid text and high-detail architecture; route outward by nearest edge. For 13 model anchors use tiny labels with 8–18 word function notes. Reserve 35–45 word notes for the three major turning points.",
+      "accurateVsSchematic": "Solid leader with open circle = verified model region. Dashed leader to a bracketed inset = design relationship / exact location unverified. Never put a fake geographic dot on an unknown node.",
+      "captionTypography": "At 2520px preview, primary labels 14–17px and body 12–14px; do not shrink all annotations to fit. Remove repetitive body text before reducing type.",
+      "density": "Fill the lower 20–25% with explanatory miniatures. Use dark tonal separation behind text, not framed dashboard cards or dense ornament.",
+      "websiteInteraction": "Hover/focus/click a region to brighten its actual map area and reveal a one-sentence purpose; a second level expands the connected section diagram. Keep a visible annotation summary so reading does not depend on hovering.",
+      "staticVersion": "Display essential annotations in full; use a fixed, balanced selection of diagrams without mouse or scroll dependencies."
+    },
+    "conceptIllustrations": [
+      {
+        "id": "A01",
+        "subject": "Staircase: gathered / erased / still-dispersed",
+        "purpose": "Three side-by-side sections, same stair and camera, tiny player silhouette, thin state line. Ensure the erased middle state contains a true void."
+      },
+      {
+        "id": "A02",
+        "subject": "Corridor mirror and dispersed floor",
+        "purpose": "Long sightline toward reflected player plus a tiny section showing gathered player falling through dispersed floor. Keep architecture secondary to the mechanism."
+      },
+      {
+        "id": "A03",
+        "subject": "Backward door",
+        "purpose": "A gathered player silhouette moves backward through a dispersed door; show gaze directed away. Do not make the door solid."
+      },
+      {
+        "id": "A04",
+        "subject": "Ceiling mirror: below / above",
+        "purpose": "Paired cutaway: similar reflected room below, recognizable chandelier top and self above. Horizontal mirror supports player; no fall arrow."
+      },
+      {
+        "id": "A05",
+        "subject": "Preserve bridge / erase gate / survive",
+        "purpose": "One eclipse baseline with three linked outcomes: bridge retained, gate absent, gathered player remains. Keep all three result labels visible."
+      },
+      {
+        "id": "A06",
+        "subject": "Facing mirrors extend the bridge",
+        "purpose": "One small controlled pair on an already retained bridge, repeated reflected spans continue into a long traversable path. Do not imply restoring an erased bridge or an actual infinite path."
+      }
+    ]
+  },
+  "compactPageCalloutsEN": [
+    {
+      "group": "01 / Learn through movement",
+      "text": "Gather the stair to climb. At the corridor mirror, gather yourself and pass through the dispersed floor. A backward door makes control of attention deliberate.",
+      "refs": [
+        "J02",
+        "J03",
+        "J04",
+        "J05"
+      ]
+    },
+    {
+      "group": "02 / Read the same place again",
+      "text": "A familiar mirror marks the returning route. After the first eclipse, the missing stair reveals two branches: the ceiling mirror explains how to leave earlier; the lost bridge explains why.",
+      "refs": [
+        "J06",
+        "J08",
+        "J09",
+        "J10",
+        "J11"
+      ]
+    },
+    {
+      "group": "03 / Arrive with a plan",
+      "text": "Use the starting reflection and cross the dispersed stair before the eclipse. Keep the bridge gathered, let the gate be erased and remain gathered yourself. Facing mirrors then extend the retained crossing.",
+      "refs": [
+        "J12",
+        "J13",
+        "J14",
+        "J15",
+        "J17"
+      ]
+    },
+    {
+      "group": "04 / Continue after disappearance",
+      "text": "When gaze no longer gathers the path, familiar space supports the final steps. Local reappearances guide the ascent toward one last view of the moon.",
+      "refs": [
+        "J18",
+        "J19"
+      ]
+    }
+  ]
+}

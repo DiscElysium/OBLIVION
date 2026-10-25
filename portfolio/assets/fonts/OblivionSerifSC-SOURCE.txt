@@ -1,0 +1,11 @@
+OblivionSerifSC is a web subset of Noto Serif SC, distributed under SIL Open Font License 1.1.
+
+Original copyright: Copyright 2012 Google Inc. All Rights Reserved.
+Official source: https://github.com/google/fonts/tree/main/ofl/notoserifsc
+Font source: https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf
+License source: https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/OFL.txt
+Upstream repository: https://github.com/notofonts/noto-cjk
+
+Modifications for this website (25 October 2026): subset to the site's Chinese/Latin text and UI symbols; variable weight range restricted to 400–600; family renamed OblivionSerifSC; converted to WOFF2. Glyph outlines are unaltered except the standard variable-font range instancing.
+
+The complete license is included in OblivionSerifSC-OFL.txt.

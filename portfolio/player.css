@@ -1,0 +1,11 @@
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000;color:#ddd;font-family:Arial,'Microsoft YaHei',sans-serif;color-scheme:dark}
+#unity-canvas{display:block;width:100%;height:100%;background:#000;outline:none}
+.player-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;pointer-events:none;background:#000;transition:opacity .45s}
+.player-wordmark{font-family:Georgia,serif;font-size:clamp(18px,3.1vw,32px);font-weight:400;letter-spacing:.3em;padding-left:.3em;color:#eee}
+.player-loading p{font-size:12px;line-height:1.8;letter-spacing:.12em;margin:22px 0 25px;color:#aaa}
+.player-track{height:1px;width:min(230px,47vw);background:#343434;overflow:hidden}.player-track span{display:block;height:100%;width:0;background:#eee;transition:width .2s}
+#player-percent{font-size:10px;letter-spacing:.1em;color:#888;margin-top:13px}
+body[data-player-state=ready] .player-loading{opacity:0;visibility:hidden}
+body[data-player-state=error] .player-loading p{max-width:80%;text-align:center;color:#ddd}
+@media(prefers-reduced-motion:reduce){.player-loading,.player-track span{transition:none}}
+#unity-container{position:fixed;inset:0;width:100%;height:100%}
