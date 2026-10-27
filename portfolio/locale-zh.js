@@ -283,3 +283,10 @@ window.OBLIVION_ZH={
 
 
 window.OBLIVION_ZH["Play here ↑"]="在此游玩 ↑";
+
+// Bilibili film entry and verified reach, 27 October 2026.
+window.OBLIVION_ZH["Watch on Bilibili ↗"]="观看 Bilibili 视频 ↗";
+window.OBLIVION_ZH["44,095 views"]="44,095 次播放";
+window.OBLIVION_ZH["Watch the OBLIVION project film on Bilibili"]="在 Bilibili 观看 OBLIVION 作品视频";
+window.OBLIVION_ZH["Recorded 27 October 2026"]="记录于 2026 年 10 月 27 日";
+window.OBLIVION_ZH["Bilibili video ↗"]="Bilibili 作品视频 ↗";
