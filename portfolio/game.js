@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   if (new URLSearchParams(location.search).has('print')) return;
-  const zh = window.OBLIVION_I18N.lang === 'zh';
+  const zh = document.documentElement.dataset.language === 'zh';
   const copy = zh ? {
     label:'在此，进入这个世界', fullscreen:'全屏游玩 ↗', exit:'退出全屏 ↙', reload:'重新载入',
     controls:'WASD 移动 · 鼠标观察 · 空格跳跃 · Esc 释放鼠标', loading:'正在加载', ready:'点击画面，开始游玩',

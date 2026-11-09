@@ -1,24 +1,136 @@
 <!doctype html>
 <html lang="zh-CN" data-language="zh">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OBLIVION — A world held in attention</title>
-  <meta name="description" content="An independent first-person exploration game about attention, impermanence and the knowledge that changes familiar places. An interactive portfolio in six studies.">
-  <meta name="theme-color" content="#000000"><meta name="color-scheme" content="dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="OBLIVION 遗忘。关于注意与无常的第一人称探索游戏，附六页中文作品集。">
+  <title>OBLIVION 遗忘 · 项目作品集</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20261027-video-01"><link rel="stylesheet" href="feedback.css?v=20261027-video-01"><link rel="stylesheet" href="locale.css?v=20261027-video-01">
-  <link rel="alternate" hreflang="zh-CN" href="zh.html"><link rel="alternate" hreflang="en" href="en.html">
+  <link rel="alternate" hreflang="zh-CN" href="zh.html">
+  <link rel="alternate" hreflang="en" href="en.html">
+  <link rel="stylesheet" href="folio-20261109.css">
   <link rel="stylesheet" href="game.css?v=20261027-video-01">
+  <script src="folio-20261109.js" defer></script>
+  <script src="game.js?v=20261109" defer></script>
 </head>
 <body>
-  <a href="#introduction" class="skip-link">Skip to the project</a>
-  <header class="site-nav"><a class="wordmark" href="#introduction">OBLIVION<span>A STUDY IN ATTENTION</span></a><button class="mobile-menu" aria-label="Open chapter navigation" aria-expanded="false">Chapters +</button><nav aria-label="Portfolio chapters"><a href="#introduction">01 <span>Project</span></a><a href="#rules">02 <span>Rules</span></a><a href="#craft">03 <span>Craft</span></a><a href="#journey">04 <span>Journey</span></a><a href="#understanding">05 <span>Design</span></a><a href="#voices">06 <span>Voices</span></a></nav><div class="language-switch" role="navigation" aria-label="Language" data-no-translate><a href="zh.html" data-language="zh" lang="zh-CN" hreflang="zh-CN">中文</a><span aria-hidden="true">/</span><a href="en.html" data-language="en" lang="en" hreflang="en">English</a></div><a class="download" href="OBLIVION-Portfolio.pdf?v=20261027-video-01" download>Portfolio PDF <span>↓</span></a></header>
-  <main id="portfolio"></main>
-  <footer class="site-footer"><span>OBLIVION / an independent game & an evolving study</span><div><a href="https://discelysium.github.io/OBLIVION/" target="_blank" rel="noopener">Play the game ↗</a><a href="https://www.bilibili.com/video/BV16y3F6aEQf/" target="_blank" rel="noopener">Bilibili video ↗</a><a href="OBLIVION-Portfolio.pdf?v=20261027-video-01" download>Download the six-page portfolio ↓</a></div><small>Draft edition · October 2026. AI illustrations explain mechanisms; gameplay captures and model studies are identified separately.</small></footer>
-  <dialog id="detail-dialog" class="detail-dialog"><button class="close-detail" aria-label="Close detail">×</button><span class="detail-kicker"></span><h2></h2><div class="detail-content"></div></dialog>
-  <div id="lightbox" class="lightbox" hidden><button aria-label="Close image">×</button><img alt=""><p></p></div>
-  <script src="locale-zh.js?v=20261027-video-01"></script><script src="i18n.js?v=20261027-video-01"></script>
-  <script src="assets/map-data.js?v=20261027-video-01"></script><script src="feedback.js?v=20261027-video-01"></script><script src="main.js?v=20261027-video-01"></script>
-  <script src="game.js?v=20261027-video-01"></script>
+  <a href="#introduction" class="skip-link">跳到作品介绍</a>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="wordmark" href="#introduction">OBLIVION</a>
+      <nav class="chapters" aria-label="作品集章节"><a href="#introduction"><span>01</span> 项目</a><a href="#craft"><span>02</span> 技术</a><a href="#rules"><span>03</span> 玩法</a><a href="#journey"><span>04</span> 地图</a><a href="#understanding"><span>05</span> 谜题</a><a href="#voices"><span>06</span> 反馈</a></nav>
+      <div class="nav-actions">
+        <nav class="language-switch" aria-label="语言">
+          <a href="zh.html" lang="zh-CN" hreflang="zh-CN" aria-current='page'>中文</a>
+          <a href="en.html" lang="en" hreflang="en">EN</a>
+        </nav>
+        <a class="download" href="OBLIVION-Portfolio-ZH.pdf?v=20261109" download>中文版 PDF ↓</a>
+      </div>
+    </div>
+  </header>
+  <main id="portfolio">
+    
+    <section class="folio" id="introduction" aria-labelledby="introduction-title">
+      <div class="chapter-intro">
+        <p class="eyebrow">01 / 片刻相遇，已然足够。</p>
+        <h1 id="introduction-title">OBLIVION 遗忘</h1>
+        <p class="chapter-lead">一款关于注意与无常的第一人称探索游戏。凝视让消逝中的世界暂时成形。</p>
+      </div>
+      <figure>
+        <a class="page-preview" href="assets/folio-20261109/01-zh.webp" data-page-title="01 / OBLIVION 遗忘" aria-label="放大查看版面 · 片刻相遇，已然足够。">
+          <img src="assets/folio-20261109/01-zh.webp" width="3360" height="1440" alt="定稿版面 · 片刻相遇，已然足够。" loading="eager" decoding="async">
+        </a>
+        <figcaption><a href="assets/folio-20261109/01-zh.webp" data-page-title="01 / OBLIVION 遗忘">放大查看版面 ↗</a><span>21:9 · 01 / 06</span></figcaption>
+      </figure>
+      <p class="facts">独立设计与开发 · BYAA 中国赛区金奖 · 哔哩哔哩 4.5 万次视频播放</p><p class="links"><a href="https://discelysium.github.io/OBLIVION/">游玩 OBLIVION ↗</a><a href="https://www.bilibili.com/video/BV16y3F6aEQf/">哔哩哔哩实机视频 ↗</a></p>
+    </section>
+    <section class="folio" id="craft" aria-labelledby="craft-title">
+      <div class="chapter-intro">
+        <p class="eyebrow">02 / 技术与美学</p>
+        <h2 id="craft-title">构筑一个脆弱的世界</h2>
+        <p class="chapter-lead">粒子渲染从平面与球面投影逐步转向三维建筑的轮廓。每次尝试都在检验转动视角时，玩家是否还能辨认结构、在空间里找到方向。</p>
+      </div>
+      <figure>
+        <a class="page-preview" href="assets/folio-20261109/02-zh.webp" data-page-title="02 / 构筑一个脆弱的世界" aria-label="放大查看版面 · 技术与美学">
+          <img src="assets/folio-20261109/02-zh.webp" width="3360" height="1440" alt="定稿版面 · 技术与美学" loading="lazy" decoding="async">
+        </a>
+        <figcaption><a href="assets/folio-20261109/02-zh.webp" data-page-title="02 / 构筑一个脆弱的世界">放大查看版面 ↗</a><span>21:9 · 02 / 06</span></figcaption>
+      </figure>
+      <div class="notes"><div><h3>从投影到三维轮廓</h3><p>平面投影转动时容易暴露平面感。受到《奥伯拉丁的回归》启发，球面投影减少了转动视角时重新排列粒子的开销，随后以三维建筑轮廓解决空间可信度的问题。</p></div><div><h3>让粒子与线条共存</h3><p>对照完整网格，筛出开放边界与明显转折，并缓存每个物体的边采样方案。顶点着色器负责粒子的聚散与漂移。稳定的远景线条保留方位，粒子用在会变化和可交互的物体上。</p></div></div><details class="media"><summary>线框地形与粒子平台 · 9 秒实机录像</summary><video controls playsinline preload="none" aria-label="线框地形与粒子平台 · 9 秒实机录像" src="assets/folio-20261109/gathering-gameplay.mp4"></video></details>
+    </section>
+    <section class="folio" id="rules" aria-labelledby="rules-title">
+      <div class="chapter-intro">
+        <p class="eyebrow">03 / 玩法与哲学</p>
+        <h2 id="rules-title">世界在消逝，我们仍选择认识它。</h2>
+        <p class="chapter-lead">凝视，即铭记。被铭记的事物，在记忆世界中成形。就算世界和记忆终将消逝，相遇本身依然有意义。</p>
+      </div>
+      <figure>
+        <a class="page-preview" href="assets/folio-20261109/03-zh.webp" data-page-title="03 / 世界在消逝，我们仍选择认识它。" aria-label="放大查看版面 · 玩法与哲学">
+          <img src="assets/folio-20261109/03-zh.webp" width="3360" height="1440" alt="定稿版面 · 玩法与哲学" loading="lazy" decoding="async">
+        </a>
+        <figcaption><a href="assets/folio-20261109/03-zh.webp" data-page-title="03 / 世界在消逝，我们仍选择认识它。">放大查看版面 ↗</a><span>21:9 · 03 / 06</span></figcaption>
+      </figure>
+      <div class="notes"><div><h3>凝视与遗忘</h3><p>凝视物体使它聚集，镜中自视使自身成形，凝视镜中物体则生成对应物。移开视线，易变的事物会消散。月食抹去届时仍处于消散状态的事物。</p></div><div><h3>推想，走向下一次相遇</h3><p>《星际拓荒》启发我让思考和探索相互推进。新知识引出假设，探索带来发现，发现再催生下一个想法。粒子建筑、钢琴、月光和黑暗让玩家愿意在途中驻足。</p></div><div><h3>用脚步重建记忆</h3><p>重访让玩家记住落脚点、距离和节奏。终局中，玩家凭记忆走过已经消失的地图，脚下的事物随每一步重新成形。</p></div></div>
+    </section>
+    <section class="folio" id="journey" aria-labelledby="journey-title">
+      <div class="chapter-intro">
+        <p class="eyebrow">04 / 地图与知识递进</p>
+        <h2 id="journey-title">一张地图，三次理解。</h2>
+        <p class="chapter-lead">重返熟悉的地点，玩家会发现它们的新用途。掌握规则后，一次探索就能走完整条路线。</p>
+      </div>
+      <figure>
+        <a class="page-preview" href="assets/folio-20261109/04-zh.webp" data-page-title="04 / 一张地图，三次理解。" aria-label="放大查看版面 · 地图与知识递进">
+          <img src="assets/folio-20261109/04-zh.webp" width="3360" height="1440" alt="定稿版面 · 地图与知识递进" loading="lazy" decoding="async">
+        </a>
+        <figcaption><a href="assets/folio-20261109/04-zh.webp" data-page-title="04 / 一张地图，三次理解。">放大查看版面 ↗</a><span>21:9 · 04 / 06</span></figcaption>
+      </figure>
+      <div class="notes"><div><h3>01–06 · 在行动中学会规则</h3><p>凝视楼梯并登高，在沿途见到用途尚不明朗的镜框。长廊让玩家看见倒影，学会以聚集的身体穿过消散物体。大教堂指向月亮，首次月食抹去所有仍处于消散状态的事物。</p></div><div><h3>07–11 · 重新认出捷径</h3><p>凝视倒影可以在现实空间生成对应物。楼梯被抹去后露出下方通道，起点顶镜则能让玩家提早聚集自身。观景台的门已经消失，桥也已被抹去，这才显出为何必须提早到达。</p></div><div><h3>12–15 · 赶在抹除之前</h3><p>在起点利用顶镜聚集身体，穿过仍处于消散状态的楼梯。月食前保住自身与桥，让门维持消散。相向镜面延伸桥段，越过山体后抵达湖面，开始凭记忆重建世界。</p></div></div>
+    </section>
+    <section class="folio" id="understanding" aria-labelledby="understanding-title">
+      <div class="chapter-intro">
+        <p class="eyebrow">05 / 关键谜题设计与终局</p>
+        <h2 id="understanding-title">知道之后，路就变了</h2>
+        <p class="chapter-lead">同一段楼梯先通往上层，再显出下方入口，最后成为抢在月食前通过的捷径。每条走法都取决于玩家已经知道什么。</p>
+      </div>
+      <figure>
+        <a class="page-preview" href="assets/folio-20261109/05-zh.webp" data-page-title="05 / 知道之后，路就变了" aria-label="放大查看版面 · 关键谜题设计与终局">
+          <img src="assets/folio-20261109/05-zh.webp" width="3360" height="1440" alt="定稿版面 · 关键谜题设计与终局" loading="lazy" decoding="async">
+        </a>
+        <figcaption><a href="assets/folio-20261109/05-zh.webp" data-page-title="05 / 知道之后，路就变了">放大查看版面 ↗</a><span>21:9 · 05 / 06</span></figcaption>
+      </figure>
+      <div class="notes"><div><h3>同一座楼梯的三种走法</h3><p>先凝视使楼梯成形，再沿它登高。月食抹去楼梯后，从露出的下方开口通过。下一轮借起点顶镜先聚集自身，就能直接穿过消散的楼梯，在月食前抵达观景台。</p></div><div><h3>一次月食，三种结果</h3><p>在镜中凝聚自身，再移开视线，倒退通过消散的门。让自身和桥保持聚集，门保持消散，同一次月食便留下身体与桥，抹去阻路的门。</p></div><div><h3>双镜延伸道路，脚步唤回世界</h3><p>两面相对的镜子让桥段反复映照，凝视镜中桥段便能让对应桥段成形。终局里凝视时道路仍暗，迈步才让近处的形体显现。</p></div></div><details class="media"><summary>双镜长路 · 三维机制演示</summary><video controls playsinline preload="none" aria-label="双镜长路 · 三维机制演示" src="assets/folio-20261109/facing-mirrors.mp4"></video></details>
+    </section>
+    <section class="folio" id="voices" aria-labelledby="voices-title">
+      <div class="chapter-intro">
+        <p class="eyebrow">06 / 公开反馈与改进</p>
+        <h2 id="voices-title">在公开反馈中迭代。</h2>
+        <p class="chapter-lead">三条公开讨论对应四项改进。这里并列呈现当时的评论、可查的历史回复，以及后来记录的设计决定。</p>
+      </div>
+      <figure>
+        <a class="page-preview" href="assets/folio-20261109/06-zh.webp" data-page-title="06 / 在公开反馈中迭代。" aria-label="放大查看版面 · 公开反馈与改进">
+          <img src="assets/folio-20261109/06-zh.webp" width="3360" height="1440" alt="定稿版面 · 公开反馈与改进" loading="lazy" decoding="async">
+        </a>
+        <figcaption><a href="assets/folio-20261109/06-zh.webp" data-page-title="06 / 在公开反馈中迭代。">放大查看版面 ↗</a><span>21:9 · 06 / 06</span></figcaption>
+      </figure>
+      <div class="notes"><div><h3>让黑暗向远处慢慢展开</h3><p>视频观众提到黑暗中轮廓难辨。开发中扩展了粒子的可见范围并让其随距离变暗，用月面贴图与光晕建立月光感，再以独立线条保留远山轮廓。</p></div><div><h3>给落点更多余量</h3><p>一位网页版试玩者提到反复掉落和重来。跳高随空格按住的时长变化，平台和玩家的碰撞体积也扩大了，落点由此更宽容。</p></div><div><h3>让字形更清楚</h3><p>同一条试玩反馈也提到长时间观看点状画面容易疲劳。开发中让文字在粒子凝聚后出现勾线，提高可读性，也为周围建筑保留更多粒子。</p></div><div><h3>缩短凝聚等待</h3><p>一位观众从视频感到游戏难上手，作者当时回复说引导不足。后续开发缩短了注视到凝聚的时间，让看见的路径和机关更容易及时显现。</p></div></div><p class="facts">反馈页采用 2026 年 9 月 24 日记录的数据。154 条评论及回复，41,833 次视频播放。</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <span>OBLIVION · 2026 年 11 月 9 日定稿</span>
+    <div><a href="https://discelysium.github.io/OBLIVION/">游玩 ↗</a><a href="https://www.bilibili.com/video/BV16y3F6aEQf/">Bilibili ↗</a><a href="OBLIVION-Portfolio-ZH.pdf?v=20261109" download>下载六页作品集 ↓</a></div>
+  </footer>
+  <dialog class="page-viewer" aria-labelledby="viewer-title">
+    <div class="viewer-bar">
+      <strong id="viewer-title"></strong>
+      <div class="viewer-actions">
+        <button type="button" data-zoom="out" aria-label="缩小">−</button>
+        <button type="button" data-zoom="in" aria-label="放大">+</button>
+        <button type="button" data-close>关闭 ×</button>
+      </div>
+    </div>
+    <div class="viewer-image" tabindex="0" aria-label="可滚动的版面图"><img alt=""></div>
+  </dialog>
 </body>
 </html>

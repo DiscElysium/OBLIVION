@@ -1,14 +1,12 @@
-# OBLIVION · Interactive portfolio
+# OBLIVION · Game design portfolio
 
-An independent exploration game about attention, memory and impermanence.
+An independent first-person exploration game about attention, memory and impermanence.
 
 - [中文版](https://discelysium.github.io/OBLIVION/portfolio/zh.html)
 - [English](https://discelysium.github.io/OBLIVION/portfolio/en.html)
 
-The six-part portfolio includes an annotated spatial map and layered public feedback. The original published Unity WebGL build loads in its own section above the complete portfolio cover. Select fullscreen for an immersive view.
+The 9 November 2026 edition follows the final six-page layout. The chapter images can be enlarged, and both languages offer readable text, two short videos and a six-page PDF. The web PDFs use compressed artwork for faster downloads.
 
-**Controls:** WASD to move, mouse to look, Space to jump, Esc to release the cursor. Keyboard and mouse are recommended.
+网站提供两个语言入口。切换语言会保留正在浏览的章节。封面上方可加载公开的 Unity WebGL 游戏。WASD 移动，鼠标观察，空格跳跃，Esc 释放鼠标。
 
-网站提供中英文独立入口，也可在页顶切换语言。游戏区独立放在完整封面上方，可直接加载游玩并支持全屏。字体和讲解素材随网站保存；游戏加载原仓库的公开 WebGL 构建。
-
-This directory is a standalone static website. `index.html` opens the Chinese edition by default. Font licenses are included under `assets/fonts/`.
+`index.html` opens the Chinese edition. Serve this directory over HTTP to preview the embedded game. Font licenses are under `assets/fonts/`.
